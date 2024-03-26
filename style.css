@@ -1,0 +1,103 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Times New Roman', serif;
+    background: #f5f4ec; /* light beige background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Page Structure */
+header {
+    background-color: #dfd7c2; /* slightly darker beige for the header */
+    color: #6a544f; /* soft brown color for text */
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 2px solid #c5b9a8; /* subtle border to separate the header */
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+/* Section titles */
+h2 {
+    border-bottom: 1px solid #c5b9a8; /* subtle border under section titles */
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.75em;
+}
+
+/* Image Styling */
+img {
+    width: auto;
+    height: 300px;
+    display: inline-block; /* Display images inline */
+    margin: 1em 1%; /* Space around images */
+    border: 1px solid #c5b9a8; /* subtle border around images */
+    vertical-align: top; /* Align images to the top */
+}
+
+/* Adjustments for article-specific images */
+article img {
+    margin-bottom: 0; /* Remove bottom margin if side by side */
+}
+
+/* Footer */
+footer {
+    background-color: #dfd7c2;
+    color: #6a544f;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: smaller;
+    }
+
+    /* Responsive Image Styling */
+    img {
+        max-width: 45%; /* Adjust for medium-sized screens */
+        margin: 1em 2%; /* Increase margin slightly */
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    body {
+        padding: 1em;
+    }
+
+    /* Responsive Image Styling */
+    img {
+        max-width: 90%; /* Full width on small screens */
+        margin: 1em 5%; /* Adjust margin for small screens */
+    }
+}
